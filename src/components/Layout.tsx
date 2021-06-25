@@ -16,7 +16,7 @@ const Layout = ({ children }: Props) => {
       </Head>
       <Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu} />
       <div onClick={() => toggleMenu && setToggleMenu(false)}>
-        <main className="overflow-hidden">{children}</main>
+        <main className="overflow-hidden d-flex flex-column">{children}</main>
         <Footer />
       </div>
     </>

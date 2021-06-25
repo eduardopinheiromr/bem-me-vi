@@ -3,54 +3,57 @@ import Link from "next/link";
 import logoImage from "../../public/assets/images/logo.png";
 import styled from "styled-components";
 
-const NavMenu = styled.nav`
-  display: flex;
-  position: relative;
-  justify-content: center;
-  min-height: 120px;
-  padding: 0 25%;
-
-  .logo {
-    position: absolute;
-    left: 25px;
-    top: 10px;
-  }
-
-  ul {
-    padding: 0;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 980px;
-
-    li a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-    }
-  }
-
-  .menu-mobile-btn {
-    position: absolute;
-    right: 25px;
-    top: 30px;
-  }
-
-  .bmv-primary-btn {
-    position: absolute;
-    top: 90px;
-  }
-  li .bmv-primary-btn {
+const HeaderContainer = styled.header`
+  nav {
+    z-index: 10;
+    display: flex;
     position: relative;
-    top: 0;
-  }
+    justify-content: center;
+    min-height: 120px;
+    padding: 0 25%;
 
-  .menu-btn {
-    filter: invert(100);
-  }
-  .menu-mobile-btn.menu-btn {
-    background: red;
+    .logo {
+      position: absolute;
+      left: 0;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      /* justify-content: flex-start; */
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 980px;
+
+      li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
+
+    .menu-mobile-btn {
+      position: absolute;
+      right: 25px;
+      top: 30px;
+    }
+
+    .bmv-primary-btn {
+      position: absolute;
+      top: 90px;
+    }
+    li .bmv-primary-btn {
+      position: relative;
+      top: 0;
+    }
+
+    .menu-btn {
+      filter: invert(100);
+    }
   }
 `;
 
@@ -61,16 +64,19 @@ type Props = {
 
 const Header = ({ toggleMenu, setToggleMenu }: Props) => {
   const links = [
-    { label: "Quem somos", href: "#" },
-    { label: "Objetivos", href: "#" },
-    { label: "Projetos", href: "#" },
-    { label: "Contato", href: "#" },
+    { label: "Quem somos", href: "#quem-somos" },
+    { label: "Objetivos", href: "#objetivos" },
+    { label: "Projetos", href: "#projetos" },
+    { label: "Contato", href: "#contato" },
   ];
   return (
-    <header>
-      <NavMenu className="bg-primary">
+    <HeaderContainer>
+      <nav className="bg-primary-bmv">
         <Link href="/" passHref>
-          <div className="logo" onClick={() => setToggleMenu(false)}>
+          <div
+            className="logo align-items-start align-items-md-center ps-lg-5 ms-lg-5"
+            onClick={() => setToggleMenu(false)}
+          >
             <Image
               height={100}
               width={150}
@@ -111,11 +117,14 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
             </a>
           </li>
         </ul>
-        <a className="bmv-primary-btn d-none d-md-block" href="#">
+        <a
+          className="bmv-primary-btn hover-scale-up d-none d-md-block"
+          href="#"
+        >
           QUERO AJUDAR!
         </a>
-      </NavMenu>
-    </header>
+      </nav>
+    </HeaderContainer>
   );
 };
 
