@@ -16,6 +16,7 @@ const WhoWeAre = () => {
     <WhoWeAreContainer id="quem-somos">
       <Headline title="QUEM SOMOS" />
       <Image
+        placeholder="blur"
         className="mx-auto"
         src={whoWeAreImage}
         alt="Foto dos colaboradores do Projeto Bem Me Vi"
@@ -25,6 +26,7 @@ const WhoWeAre = () => {
         <Row className="my-5">
           <Col lg={6} className="order-2 order-lg-0">
             <Image
+              placeholder="blur"
               src={founderImage}
               alt="Foto da fundadora do Projeto Bem Me Vi"
             />

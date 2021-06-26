@@ -7,7 +7,15 @@ const HeadlineContainer = styled.section`
   text-align: center;
 
   h3 {
-    font-size: 48px;
+    font-size: 52px;
+    font-family: "Livvic", sans-serif;
+  }
+  @media (max-width: 768px) {
+    margin: 0 auto;
+
+    h3 {
+      font-size: 42px;
+    }
   }
 `;
 

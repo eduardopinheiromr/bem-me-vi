@@ -4,6 +4,9 @@ import logoImage from "../../public/assets/images/logo.png";
 import styled from "styled-components";
 
 const HeaderContainer = styled.header`
+  font-family: "Livvic", sans-serif;
+  text-transform: uppercase;
+
   nav {
     z-index: 10;
     display: flex;
@@ -78,6 +81,7 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
             onClick={() => setToggleMenu(false)}
           >
             <Image
+              placeholder="blur"
               height={100}
               width={150}
               src={logoImage}
@@ -103,7 +107,11 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
           }`}
         >
           {links.map((link, key) => (
-            <li key={key} className="py-5" onClick={() => setToggleMenu(false)}>
+            <li
+              key={key}
+              className="py-5 hover-scale-up"
+              onClick={() => setToggleMenu(false)}
+            >
               <a href={link.href}>{link.label}</a>
             </li>
           ))}

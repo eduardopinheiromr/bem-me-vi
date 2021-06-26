@@ -5,6 +5,9 @@ import Layout from "components/Layout";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+p{
+  font-family: 'Poppins', sans-serif;
+}
 .bg-primary-bmv{
   background: #000;
 }
@@ -12,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
   color: #000;
 }
   .bmv-primary-btn {
+    font-family: 'Livvic', sans-serif;
+    font-size: 30px;
     background: linear-gradient(90deg, #000 0%, #2f2f2f 50%, #000 100%);
     border: 5px solid #fff;
     border-radius: 9px;
@@ -31,7 +36,7 @@ const GlobalStyle = createGlobalStyle`
     transition: .3s;
   }
   .hover-scale-up:hover{
-    transform: scale(1.2)
+    transform: scale(1.1)
   }
 `;
 

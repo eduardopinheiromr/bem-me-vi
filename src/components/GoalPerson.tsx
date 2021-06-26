@@ -12,6 +12,11 @@ const GoalContainer = styled.div`
     rgba(215, 188, 41, 0.5) 100%
   );
 
+  .avatar {
+    padding: 3rem;
+    margin: 0 auto;
+  }
+
   .name {
     font-size: 50px;
     font-weight: bold;
@@ -19,6 +24,24 @@ const GoalContainer = styled.div`
   .description {
     font-size: 28px;
     padding-left: 40px;
+  }
+
+  @media (max-width: 991px) {
+    text-align: center;
+
+    .avatar {
+      padding: 0;
+      width: 70%;
+      margin: 0 auto;
+    }
+    .name {
+      margin-top: 20px;
+      font-size: 42px;
+    }
+    .description {
+      padding: 0;
+      font-size: 22px;
+    }
   }
 `;
 
@@ -37,8 +60,12 @@ const GoalPerson = ({ person, order }: Props) => {
     <GoalContainer className="d-flex py-5">
       <Row>
         <Col lg={6} className={order === "left" ? "order-lg-0" : "order-lg-2"}>
-          <div className="d-flex justify-content-center p-5">
-            <Image src={person.image} alt={`Foto de ${person.name}`} />
+          <div className="d-flex justify-content-center avatar">
+            <Image
+              placeholder="blur"
+              src={person.image}
+              alt={`Foto de ${person.name}`}
+            />
           </div>
         </Col>
         <Col lg={6} className={order === "left" ? "order-lg-2" : "order-lg-0"}>

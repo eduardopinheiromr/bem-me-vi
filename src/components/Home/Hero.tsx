@@ -5,8 +5,8 @@ import logoImage from "../../../public/assets/images/logo.png";
 import styled from "styled-components";
 
 const HeroContainer = styled.div`
-  height: 100vh;
   display: flex;
+  margin-bottom: 50px;
 
   .hero-image {
     position: absolute;
@@ -47,6 +47,7 @@ const HeroContainer = styled.div`
   .headline {
     padding: 100px 0;
     font-size: 48px;
+    font-family: "Livvic", sans-serif;
     @media (max-width: 768px) {
       padding: 60px 0;
       font-size: 28px;
@@ -59,6 +60,7 @@ const Hero = () => {
     <HeroContainer>
       <div className="hero-image">
         <Image
+          placeholder="blur"
           src={heroImage}
           alt="Banner com foto de alguns membros participando de um evento do Projeto Bem Me Vi"
         />
@@ -72,6 +74,7 @@ const Hero = () => {
             </p>
 
             <Image
+              placeholder="blur"
               objectFit="contain"
               src={logoImage}
               alt="Banner com foto de alguns membros participando de um evento do Projeto Bem Me Vi"
