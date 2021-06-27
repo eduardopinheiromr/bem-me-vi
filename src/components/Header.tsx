@@ -21,7 +21,6 @@ const HeaderContainer = styled.header`
       height: 100%;
       padding: 10px;
       display: flex;
-      /* justify-content: flex-start; */
     }
 
     ul {
@@ -109,7 +108,7 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
           {links.map((link, key) => (
             <li
               key={key}
-              className="py-5 hover-scale-up"
+              className="py-5 hover-scale-up cursor-pointer"
               onClick={() => setToggleMenu(false)}
             >
               <a href={link.href}>{link.label}</a>
