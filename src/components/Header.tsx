@@ -12,14 +12,14 @@ const HeaderContainer = styled.header`
     display: flex;
     position: relative;
     justify-content: center;
-    min-height: 120px;
+    min-height: 80px;
     padding: 0 25%;
 
     .logo {
       position: absolute;
       left: 0;
       height: 100%;
-      padding: 10px;
+      padding: 5px 10px;
       display: flex;
     }
 
@@ -40,13 +40,13 @@ const HeaderContainer = styled.header`
 
     .menu-mobile-btn {
       position: absolute;
-      right: 25px;
-      top: 30px;
+      right: 15px;
+      top: 15px;
     }
 
     .bmv-primary-btn {
       position: absolute;
-      top: 90px;
+      top: 70px;
     }
     li .bmv-primary-btn {
       position: relative;
@@ -73,7 +73,7 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
   ];
   return (
     <HeaderContainer>
-      <nav className="bg-primary-bmv">
+      <nav className="bg-primary-bmv pb-3 pb-lg-0">
         <Link href="/" passHref>
           <div
             className="logo align-items-start align-items-md-center ps-lg-5 ms-lg-5"
@@ -81,8 +81,8 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
           >
             <Image
               placeholder="blur"
-              height={100}
-              width={150}
+              height={70}
+              width={100}
               src={logoImage}
               alt="Logo Bem Me Vi"
             />
@@ -101,14 +101,14 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
           />
         </div>
         <ul
-          className={`flex-column flex-md-row pt-5 mt-5 pt-md-0 mt-md-0 d-md-flex ${
+          className={`mb-0 flex-column flex-md-row pt-5 pt-md-0 mt-md-0 d-md-flex ${
             toggleMenu ? "d-flex" : "d-none"
           }`}
         >
           {links.map((link, key) => (
             <li
               key={key}
-              className="py-5 hover-scale-up cursor-pointer"
+              className="py-3 py-lg-4 hover-scale-up cursor-pointer"
               onClick={() => setToggleMenu(false)}
             >
               <a href={link.href}>{link.label}</a>

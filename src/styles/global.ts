@@ -31,11 +31,11 @@ export const GlobalStyle = createGlobalStyle`
   }
   .bmv-primary-btn {
     font-family: 'Livvic', sans-serif;
-    font-size: 30px;
+    font-size: 22px;
     background: linear-gradient(90deg, #000 0%, #2f2f2f 50%, #000 100%);
     border: 5px solid #fff;
     border-radius: 9px;
-    padding: 25px 40px;
+    padding: 15px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
