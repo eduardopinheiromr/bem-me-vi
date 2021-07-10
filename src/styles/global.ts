@@ -47,6 +47,25 @@ export const GlobalStyle = createGlobalStyle`
   .bmv-primary-btn:hover{
     color: #fff;
   }
+
+  .bmv-secondary-btn{
+    font-family: 'Livvic', sans-serif;
+    font-size: 22px;
+    background: linear-gradient(90deg, #FCD604 0%, #9E8A17 50%, #FCD604 100%);
+    border: 5px solid #fff;
+    border-radius: 9px;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  .bmv-secondary-btn:hover{
+    color: #fff;
+  }
   .hover-scale-up{
     transition: .3s;
   }
