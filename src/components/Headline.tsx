@@ -5,7 +5,9 @@ const HeadlineContainer = styled.section`
   max-width: 800px;
   margin: 0 auto 3rem;
   text-align: center;
+  text-shadow: 0px 5px 3px #082641;
 
+  color: #fff;
   h3 {
     font-size: 52px;
     font-family: "Livvic", sans-serif;

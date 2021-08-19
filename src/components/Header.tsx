@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import logoImage from "../../public/assets/images/logo.png";
 import styled from "styled-components";
 
 const HeaderContainer = styled.header`
@@ -74,20 +72,6 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
   return (
     <HeaderContainer>
       <nav className="bg-primary-bmv pb-3 pb-lg-0">
-        <Link href="/" passHref>
-          <div
-            className="logo align-items-start align-items-md-center ps-lg-5 ms-lg-5"
-            onClick={() => setToggleMenu(false)}
-          >
-            <Image
-              placeholder="blur"
-              height={70}
-              width={100}
-              src={logoImage}
-              alt="Logo Bem Me Vi"
-            />
-          </div>
-        </Link>
         <div
           className="menu-mobile-btn d-md-none"
           onClick={() => setToggleMenu(!toggleMenu)}
@@ -120,7 +104,7 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
               href="#"
               onClick={() => setToggleMenu(false)}
             >
-              QUERO AJUDAR!
+              <span>QUERO AJUDAR!</span>
             </a>
           </li>
         </ul>
@@ -128,7 +112,7 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
           className="bmv-primary-btn hover-scale-up d-none d-md-block"
           href="#"
         >
-          QUERO AJUDAR!
+          <span>QUERO AJUDAR!</span>
         </a>
       </nav>
     </HeaderContainer>
