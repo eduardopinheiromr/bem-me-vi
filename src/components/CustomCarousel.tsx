@@ -1,6 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styled from "styled-components";
+import { useMediaPredicate } from "react-media-hook";
 
 const StyledCarousel = styled.div`
   max-width: 1300px;
@@ -9,9 +10,9 @@ const StyledCarousel = styled.div`
   .react-multiple-carousel__arrow {
     height: 60px;
     width: 60px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
   }
   .react-multiple-carousel__arrow--right::before {
     content: "▲";
@@ -36,20 +37,23 @@ export default function CustomCarousel({ children }: Props) {
     desktop: {
       breakpoint: {
         max: 30000,
-        min: 0,
+        min: 768,
       },
       items: 1,
       partialVisibilityGutter: 40,
     },
   };
+
+  const isDesktop = useMediaPredicate("(min-width: 768px)");
+
   return (
     <StyledCarousel>
       <Carousel
         infinite
         draggable={false}
         pauseOnHover={false}
-        arrows
         responsive={responsive}
+        arrows={isDesktop}
       >
         {children}
       </Carousel>

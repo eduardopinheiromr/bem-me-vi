@@ -6,6 +6,7 @@ const HeadlineContainer = styled.section`
   margin: 0 auto 3rem;
   text-align: center;
   text-shadow: 0px 5px 3px #082641;
+  padding: 0 20px;
 
   color: #fff;
   h3 {
@@ -17,6 +18,12 @@ const HeadlineContainer = styled.section`
 
     h3 {
       font-size: 42px;
+    }
+  }
+
+  p {
+    @media (min-width: 768px) {
+      text-align: left;
     }
   }
 `;

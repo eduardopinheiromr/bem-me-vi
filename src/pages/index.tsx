@@ -1,10 +1,12 @@
-import Hero from "components/Home/Hero";
-import WhoWeAre from "components/Home/WhoWeAre";
-import Goals from "components/Home/Goals";
-import OurHistory from "components/Home/OurHistory";
-import Projects from "components/Home/Projects";
-import Links from "components/Home/Links";
-import Subscription from "../components/Home/Subscription";
+import {
+  BenefitedPublic,
+  Goals,
+  Hero,
+  MissionVisionValues,
+  OurHistory,
+  Subscription,
+  WhoWeAre,
+} from "@components/Home";
 
 export default function Home() {
   return (
@@ -13,8 +15,8 @@ export default function Home() {
       <WhoWeAre />
       <Goals />
       <OurHistory />
-      <Projects />
-      <Links />
+      <BenefitedPublic />
+      <MissionVisionValues />
       <Subscription />
     </>
   );

@@ -1,11 +1,10 @@
 import Image from "next/image";
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styled from "styled-components";
 import Headline from "../Headline";
-import logoImage from "../../../public/assets/images/logo.webp";
-import ourHistoryPlaceholder from "../../../public/assets/images/our-history-placeholder.webp";
-import Video from "components/Video";
+import logoImage from "@images/logo.webp";
+import ourHistoryPlaceholder from "@images/our-history-placeholder.webp";
+import Video from "@components/Video";
 
 const OurHistoryContainer = styled.section`
   color: #fff;
@@ -13,8 +12,8 @@ const OurHistoryContainer = styled.section`
 
 const OurHistory = () => {
   return (
-    <OurHistoryContainer id="objetivos" className="text-center mx-auto">
-      <Headline title="Nossa história" />
+    <OurHistoryContainer id="objetivos" className="text-left mx-auto">
+      <Headline title="NOSSA HISTÓRIA" />
       <Container>
         <Row>
           <Col lg={6}>
@@ -26,7 +25,7 @@ const OurHistory = () => {
             />
           </Col>
           <Col>
-            <div className="d-flex flex-column justify-content-center h-100">
+            <div className="d-flex flex-column h-100">
               <p>
                 O primeiro contato de <strong>Thays</strong>, a fundadora do
                 projeto, com a área social foi na adolescência, obtendo a

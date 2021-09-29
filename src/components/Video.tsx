@@ -21,7 +21,10 @@ export default function Video({ src, placeholder }: Props) {
           allowFullScreen
         />
       ) : (
-        <div onClick={() => setPlay(true)} className="cursor-pointer">
+        <div
+          onClick={() => setPlay(true)}
+          className="cursor-pointer  d-flex justify-content-center"
+        >
           <Image
             placeholder="blur"
             className="mx-auto"

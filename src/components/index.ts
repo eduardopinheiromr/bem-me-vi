@@ -1,0 +1,9 @@
+export { default as CustomCarousel } from "./CustomCarousel";
+export { default as Fade } from "./Fade";
+export { default as Footer } from "./Footer";
+export { default as GoalPerson } from "./GoalPerson";
+export { default as Header } from "./Header";
+export { default as Headline } from "./Headline";
+export { default as Layout } from "./Layout";
+export { default as PageTags } from "./PageTags";
+export { default as Video } from "./Video";

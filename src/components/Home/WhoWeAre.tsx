@@ -1,16 +1,15 @@
-import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
-import videoPlaceholder from "../../../public/assets/images/who-we-are-placeholder.webp";
+import videoPlaceholder from "@images/who-we-are-placeholder.webp";
 import { Container, Row, Col } from "react-bootstrap";
 import Headline from "../Headline";
 
-import thays from "../../../public/assets/images/thays.webp";
-import rafael from "../../../public/assets/images/rafael.webp";
-import rayssa from "../../../public/assets/images/rayssa.webp";
-import alexandre from "../../../public/assets/images/alexandre.webp";
-import lucas from "../../../public/assets/images/lucas.webp";
-import Video from "components/Video";
+import thays from "@images/thays.webp";
+import rafael from "@images/rafael.webp";
+import rayssa from "@images/rayssa.webp";
+import alexandre from "@images/alexandre.webp";
+import lucas from "@images/lucas.webp";
+import Video from "@components/Video";
 
 const WhoWeAreContainer = styled.section`
   display: flex;

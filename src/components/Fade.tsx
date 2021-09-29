@@ -1,6 +1,6 @@
 import { Transition } from "react-transition-group";
 import { useRef } from "react";
-import { useOnScreen } from "hooks/useOnScreen";
+import { useOnScreen } from "src/hooks/useOnScreen";
 
 const duration = 100;
 
