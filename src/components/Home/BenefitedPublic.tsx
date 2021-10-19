@@ -29,6 +29,9 @@ import bgBenefited from "@images/benefited/bg-benefited.png";
 import pedroImage from "@images/benefited/pedro.png";
 import thaisImage from "@images/benefited/thais.png";
 import francieleImage from "@images/benefited/franciele.png";
+import CustomCarousel from "@components/CustomCarousel";
+import { SwiperSlide } from "swiper/react";
+import Headline from "@components/Headline";
 
 export default function BenefitedPublic() {
   const people = [
@@ -56,6 +59,7 @@ export default function BenefitedPublic() {
   ];
   return (
     <BenefitedContainer>
+      <Headline title="PÚBLICO BENEFICIADO" />
       <div className="title">
         <h3 className="text-secondary-bmc">Jovens de 15 a 29 anos</h3>
         <p>(conforme estatuto da Juventude), sobretudo população periférica.</p>
@@ -68,33 +72,38 @@ export default function BenefitedPublic() {
         />
       </div>
       <ul>
-        <Container>
+        <CustomCarousel>
           {people.map((person, key) => (
-            <li key={key}>
-              <Row className="my-5">
-                <div className="col-12 col-lg-6 d-flex justify-content-center">
-                  <Image
-                    objectFit="contain"
-                    src={person.image}
-                    alt={"Foto de " + person.name}
-                  />
-                </div>
+            <SwiperSlide key={key}>
+              <li>
+                <Container>
+                  <Row className="my-5">
+                    <div className="col-12 col-lg-6 d-flex justify-content-center">
+                      <Image
+                        objectFit="contain"
+                        src={person.image}
+                        alt={"Foto de " + person.name}
+                        draggable={false}
+                      />
+                    </div>
 
-                <div className="col-12 col-lg-6 d-flex px-5 px-lg-0 pe-5 flex-column mx-auto mx-lg-0 align-items-center align-items-lg-start my-5 my-lg-0 text-white">
-                  <h5 className="h1">
-                    <strong>{person.name.split(" ")[0]}</strong>{" "}
-                    {person.name.split(" ")[1]}
-                  </h5>
-                  <p>{person.role}</p>
-                  <p>
-                    <strong>{person.age}</strong>
-                  </p>
-                  <p>{person.text}</p>
-                </div>
-              </Row>
-            </li>
+                    <div className="col-12 col-lg-6 d-flex px-5 px-lg-0 pe-5 flex-column mx-auto mx-lg-0 align-items-center align-items-lg-start my-5 my-lg-0 text-white">
+                      <h5 className="h1">
+                        <strong>{person.name.split(" ")[0]}</strong>{" "}
+                        {person.name.split(" ")[1]}
+                      </h5>
+                      <p>{person.role}</p>
+                      <p>
+                        <strong>{person.age}</strong>
+                      </p>
+                      <p>{person.text}</p>
+                    </div>
+                  </Row>
+                </Container>
+              </li>
+            </SwiperSlide>
           ))}
-        </Container>
+        </CustomCarousel>
       </ul>
     </BenefitedContainer>
   );

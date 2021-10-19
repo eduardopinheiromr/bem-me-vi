@@ -10,6 +10,7 @@ import adolescentesImage from "../../../public/assets/images/adolescentes.png";
 import jovensImage from "../../../public/assets/images/jovens.png";
 import participantesImage from "../../../public/assets/images/participantes.png";
 import ligationImage from "../../../public/assets/images/ligation.png";
+import { SwiperSlide } from "swiper/react";
 
 const ProjectsContainer = styled.section`
   .benefited-public {
@@ -90,17 +91,19 @@ const Projects = () => {
       />
       <CustomCarousel>
         {projects.map((project, key) => (
-          <div key={key} className="d-flex justify-content-center fade-appear">
-            <Image
-              title={project.alt}
-              src={project.src}
-              alt={project.alt}
-              objectFit="contain"
-              draggable="false"
-              placeholder="blur"
-              loading="eager"
-            />
-          </div>
+          <SwiperSlide key={key}>
+            <div className="d-flex justify-content-center fade-appear">
+              <Image
+                title={project.alt}
+                src={project.src}
+                alt={project.alt}
+                objectFit="contain"
+                draggable="false"
+                placeholder="blur"
+                loading="eager"
+              />
+            </div>
+          </SwiperSlide>
         ))}
       </CustomCarousel>
 

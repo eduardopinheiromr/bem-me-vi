@@ -4,8 +4,8 @@ import {
   Hero,
   MissionVisionValues,
   OurHistory,
-  Subscription,
   WhoWeAre,
+  MeansOfAction,
 } from "@components/Home";
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <OurHistory />
       <BenefitedPublic />
       <MissionVisionValues />
-      <Subscription />
+      <MeansOfAction />
     </>
   );
 }

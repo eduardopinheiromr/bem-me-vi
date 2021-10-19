@@ -22,9 +22,7 @@ const HeadlineContainer = styled.section`
   }
 
   p {
-    @media (min-width: 768px) {
-      text-align: left;
-    }
+    font-size: 24px;
   }
 `;
 

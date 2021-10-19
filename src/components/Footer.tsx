@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import facebookImage from "../../public/assets/icons/facebook.png";
 import instagramImage from "../../public/assets/icons/instagram.png";
 import phoneImage from "../../public/assets/icons/phone.png";
 import footerImage from "@images/bmv-footer.png";
+import { useMediaPredicate } from "react-media-hook";
 
 const FooterContainer = styled.footer`
+  height: 100vh;
+  position: relative;
+
   p,
   h3 {
     font-weight: 700;
@@ -24,9 +27,6 @@ const FooterContainer = styled.footer`
       font-size: 42px;
     }
   }
-  .image {
-    height: 100vh;
-  }
 `;
 
 const Footer = () => {
@@ -35,9 +35,20 @@ const Footer = () => {
     { name: "Instagram", image: instagramImage, href: "#" },
     { name: "Telefone", image: phoneImage, href: "#" },
   ];
+
+  const isDesktop = useMediaPredicate("(min-width: 768px)");
+
   return (
-    <>
-      <FooterContainer
+    <FooterContainer id="contato" className="bg-primary-bmv">
+      <Image
+        src={footerImage}
+        objectFit={isDesktop ? "cover" : "contain"}
+        layout="fill"
+        // objectPosition="bottom"
+        alt="Bem Me Vi"
+        placeholder="blur"
+      />
+      {/* <FooterContainer
         id="contato"
         className="bg-primary-bmv text-white text-center text-lg-start"
       >
@@ -71,17 +82,18 @@ const Footer = () => {
             </Col>
           </Row>
         </Container>
-        <div className="image position-relative w-full">
+        <div className="image d-flex justify-content-center position-relative w-full">
           <Image
             src={footerImage}
-            objectFit="cover"
-            layout="fill"
+            // objectFit="fill"
+            // layout="fill"
+            // objectPosition="bottom"
             alt="Bem Me Vi"
             placeholder="blur"
           />
         </div>
-      </FooterContainer>
-    </>
+      </FooterContainer> */}
+    </FooterContainer>
   );
 };
 

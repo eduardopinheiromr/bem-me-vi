@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
 import videoPlaceholder from "@images/who-we-are-placeholder.webp";
-import { Container, Row, Col } from "react-bootstrap";
 import Headline from "../Headline";
 
 import thays from "@images/thays.webp";
@@ -10,6 +9,8 @@ import rayssa from "@images/rayssa.webp";
 import alexandre from "@images/alexandre.webp";
 import lucas from "@images/lucas.webp";
 import Video from "@components/Video";
+import CustomCarousel from "@components/CustomCarousel";
+import { SwiperSlide } from "swiper/react";
 
 const WhoWeAreContainer = styled.section`
   display: flex;
@@ -86,15 +87,15 @@ const WhoWeAre = () => {
   return (
     <WhoWeAreContainer id="quem-somos">
       <Headline title="QUEM SOMOS" />
-      <Container>
-        <Row>
-          <Col lg={6} className="d-flex justify-content-center mb-5 mb-lg-0">
+      <div className="container mb-5">
+        <div className="row">
+          <div className="col-lg-6 d-flex justify-content-center mb-5 mb-lg-0">
             <Video
               src="https://www.youtube.com/embed/tC1VQsaEXs4"
               placeholder={videoPlaceholder}
             />
-          </Col>
-          <Col>
+          </div>
+          <div className="col">
             <div className="d-flex align-items-center h-100">
               <p>
                 O <strong>Bem Me Vi</strong> é um projeto social que tem como
@@ -104,35 +105,45 @@ const WhoWeAre = () => {
                 arte e valorizando seu papel na cultura do País.
               </p>
             </div>
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
 
-      <Container className="mt-5 pt-5">
-        {people.map((person, key) => (
-          <Row key={key} className="mb-5">
-            <Col lg={6} className={key % 2 === 1 ? "order-lg-2" : ""}>
-              <div className="d-flex justify-content-center align-items-center">
-                <Image
-                  placeholder="blur"
-                  src={person.image}
-                  alt={`Foto de ${person.name}`}
-                />
+      <div className="container-fluid">
+        <CustomCarousel>
+          {people.map((person, key) => (
+            <SwiperSlide key={key}>
+              <div className="row mb-5 justify-content-center">
+                <div
+                  className={
+                    (key % 2 === 1 ? "order-lg-2" : "") + " col-12 col-lg-4"
+                  }
+                >
+                  <div className="d-flex justify-content-center align-items-center">
+                    <Image
+                      placeholder="blur"
+                      src={person.image}
+                      alt={`Foto de ${person.name}`}
+                      draggable={false}
+                      objectFit="contain"
+                    />
+                  </div>
+                </div>
+                <div className="col-12 col-lg-6 d-flex">
+                  <div className="d-flex flex-column justify-content-center text-center text-lg-start">
+                    <h3 className="h1">{person.name}</h3>
+                    <p>
+                      <strong>{person.role}</strong>
+                    </p>
+                    <p>{person.about}</p>
+                    <p className="h2">{person.quote}</p>
+                  </div>
+                </div>
               </div>
-            </Col>
-            <Col lg={6} className="d-flex">
-              <div className="d-flex flex-column justify-content-center">
-                <h3 className="h1">{person.name}</h3>
-                <p>
-                  <strong>{person.role}</strong>
-                </p>
-                <p>{person.about}</p>
-                <p className="h2">{person.quote}</p>
-              </div>
-            </Col>
-          </Row>
-        ))}
-      </Container>
+            </SwiperSlide>
+          ))}
+        </CustomCarousel>
+      </div>
     </WhoWeAreContainer>
   );
 };

@@ -16,7 +16,10 @@ const OurHistory = () => {
       <Headline title="NOSSA HISTÓRIA" />
       <Container>
         <Row>
-          <Col lg={6}>
+          <Col
+            lg={6}
+            className="col-lg-6 d-flex align-items-center justify-content-center"
+          >
             <Image
               placeholder="blur"
               objectFit="contain"

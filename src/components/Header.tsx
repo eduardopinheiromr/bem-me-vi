@@ -95,7 +95,9 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
               className="py-3 py-lg-4 hover-scale-up cursor-pointer"
               onClick={() => setToggleMenu(false)}
             >
-              <a href={link.href}>{link.label}</a>
+              <a draggable="false" href={link.href}>
+                {link.label}
+              </a>
             </li>
           ))}
           <li className="d-block d-md-none">
