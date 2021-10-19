@@ -58,7 +58,7 @@ export default function BenefitedPublic() {
     },
   ];
   return (
-    <BenefitedContainer>
+    <BenefitedContainer id="publico-beneficiado">
       <Headline title="PÚBLICO BENEFICIADO" />
       <div className="title">
         <h3 className="text-secondary-bmc">Jovens de 15 a 29 anos</h3>

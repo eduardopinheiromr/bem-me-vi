@@ -66,7 +66,7 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
   const links = [
     { label: "Quem somos", href: "#quem-somos" },
     { label: "Objetivos", href: "#objetivos" },
-    { label: "Projetos", href: "#projetos" },
+    { label: "Público Beneficiado", href: "#publico-beneficiado" },
     { label: "Contato", href: "#contato" },
   ];
   return (
