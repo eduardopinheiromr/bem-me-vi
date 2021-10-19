@@ -7,3 +7,8 @@ export { default as Subscription } from "./Subscription";
 export { default as WhoWeAre } from "./WhoWeAre";
 export { default as MissionVisionValues } from "./MissionVisionValues";
 export { default as MeansOfAction } from "./MeansOfAction";
+export { default as Mentorships } from "./Mentorships";
+export { default as Results } from "./Results";
+export { default as Contacts } from "./Contacts";
+export { default as Participate } from "./Participate";
+export { default as Partners } from "./Partners";

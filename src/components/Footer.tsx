@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import facebookImage from "../../public/assets/icons/facebook.png";
-import instagramImage from "../../public/assets/icons/instagram.png";
-import phoneImage from "../../public/assets/icons/phone.png";
 import footerImage from "@images/bmv-footer.png";
 import { useMediaPredicate } from "react-media-hook";
 
@@ -30,21 +27,14 @@ const FooterContainer = styled.footer`
 `;
 
 const Footer = () => {
-  const channels = [
-    { name: "Facebook", image: facebookImage, href: "#" },
-    { name: "Instagram", image: instagramImage, href: "#" },
-    { name: "Telefone", image: phoneImage, href: "#" },
-  ];
-
   const isDesktop = useMediaPredicate("(min-width: 768px)");
 
   return (
-    <FooterContainer id="contato" className="bg-primary-bmv">
+    <FooterContainer className="bg-primary-bmv">
       <Image
         src={footerImage}
         objectFit={isDesktop ? "cover" : "contain"}
         layout="fill"
-        // objectPosition="bottom"
         alt="Bem Me Vi"
         placeholder="blur"
       />

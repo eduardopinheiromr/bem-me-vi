@@ -2,36 +2,11 @@ import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-type Props = {
-  title: string;
-  description: string;
-  image?: string;
-};
-
-const PageTags = ({ title, description, image }: Props) => {
+const PageTags = () => {
   const router = useRouter();
   const url = "https://www.bemmevi.com.br";
   return (
     <Head>
-      <title>{title}</title>
-      <meta name="robots" content="follow, index" />
-      <meta name="description" content={description} />
-      <meta property="og:title" content={title} />
-      <meta property="og:type" content="website" />
-      <meta
-        name="author"
-        content="Eduardo Pinheiro - https://edupinheiro.dev/"
-      />
-      <meta property="og:url" content={url + router.asPath} />
-      <meta
-        property="og:image"
-        content={image ? image : url + "assets/images/logo.svg"}
-      />
-      <meta property="og:site_name" content="Projeto Bem Me Vi" />
-      {/* TODO: Descobrir o que é e qual o código utilizar no content do fb:admins */}
-      {/* <meta property="fb:admins" content="" /> */}
-      <link rel="canonical" href={url + router.asPath} />
-
       <link
         rel="apple-touch-icon"
         sizes="180x180"
@@ -51,9 +26,57 @@ const PageTags = ({ title, description, image }: Props) => {
       />
       <link rel="manifest" href="/site.webmanifest" />
 
-      <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-      <meta name="theme-color" content="#ffffff" />
+      <meta name="robots" content="follow, index" />
+      <meta
+        name="author"
+        content="Eduardo Pinheiro - https://edupinheiro.dev/"
+      />
+      <meta property="og:url" content={url + router.asPath} />
+
+      <link rel="canonical" href={url + router.asPath} />
+
+      <title>
+        Bem Me Vi - Vamos juntos formar a maior rede de jovens artistas
+        periféricos do Brasil!
+      </title>
+      <meta
+        name="title"
+        content="Bem Me Vi - Vamos juntos formar a maior rede de jovens artistas periféricos do Brasil!"
+      />
+      <meta
+        name="description"
+        content="O Bem Me Vi é um projeto social que tem como objetivo dar visibilidade para jovens artistas. Promovendo o desenvolvimento e autonomia dos jovens enquanto artistas periféricos, dispondo ferramentas para viver de sua arte e valorizando seu papel na cultura do País."
+      />
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.bemmevi.com.br/" />
+      <meta
+        property="og:title"
+        content="Bem Me Vi - Vamos juntos formar a maior rede de jovens artistas periféricos do Brasil!"
+      />
+      <meta
+        property="og:description"
+        content="O Bem Me Vi é um projeto social que tem como objetivo dar visibilidade para jovens artistas. Promovendo o desenvolvimento e autonomia dos jovens enquanto artistas periféricos, dispondo ferramentas para viver de sua arte e valorizando seu papel na cultura do País."
+      />
+      <meta
+        property="og:image"
+        content="https://bemmevi.com.br/assets/images/capa.png"
+      />
+      {/* Twitter */}
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://www.bemmevi.com.br/" />
+      <meta
+        property="twitter:title"
+        content="Bem Me Vi - Vamos juntos formar a maior rede de jovens artistas periféricos do Brasil!"
+      />
+      <meta
+        property="twitter:description"
+        content="O Bem Me Vi é um projeto social que tem como objetivo dar visibilidade para jovens artistas. Promovendo o desenvolvimento e autonomia dos jovens enquanto artistas periféricos, dispondo ferramentas para viver de sua arte e valorizando seu papel na cultura do País."
+      />
+      <meta
+        property="twitter:image"
+        content="https://bemmevi.com.br/assets/images/capa.png"
+      />
     </Head>
   );
 };

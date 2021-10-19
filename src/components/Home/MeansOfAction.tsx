@@ -99,7 +99,7 @@ export default function MeansOfAction() {
     },
   ];
   return (
-    <div>
+    <div className="py-5">
       <Headline
         title="MEIOS DE ATUAÇÃO"
         description="Conteúdos digitais já desenvolvidos"
@@ -109,13 +109,13 @@ export default function MeansOfAction() {
         {contents.map((content, key) => (
           <SwiperSlide key={key}>
             <div className="h-100 row px-3">
-              <div className="h-100 col-12 col-lg-4 h3 text-white d-flex justify-content-center align-items-center flex-column text-center">
+              <div className="h-100 col-12 col-lg-5 p-5 h3 text-white d-flex justify-content-center align-items-center flex-column text-center">
                 {content.title}
                 <p>
                   Para visualizar os conteúdos realizados acesse nossas redes
                 </p>
               </div>
-              <div className="h-100 d-flex justify-content-center align-items-center col-12 col-lg-8">
+              <div className="h-100 d-flex justify-content-center align-items-center col-12 col-lg-7">
                 <Image
                   src={content.image}
                   alt=""

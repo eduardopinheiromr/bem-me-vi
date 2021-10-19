@@ -6,11 +6,18 @@ import {
   OurHistory,
   WhoWeAre,
   MeansOfAction,
+  Mentorships,
+  Results,
+  Contacts,
+  Participate,
+  Partners,
 } from "@components/Home";
+import PageTags from "@components/PageTags";
 
 export default function Home() {
   return (
     <>
+      <PageTags />
       <Hero />
       <WhoWeAre />
       <Goals />
@@ -18,6 +25,11 @@ export default function Home() {
       <BenefitedPublic />
       <MissionVisionValues />
       <MeansOfAction />
+      <Mentorships />
+      <Results />
+      <Contacts />
+      <Participate />
+      <Partners />
     </>
   );
 }
