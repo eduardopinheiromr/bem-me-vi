@@ -36,12 +36,12 @@ const PageTags = () => {
       <link rel="canonical" href={url + router.asPath} />
 
       <title>
-        Bem Me Vi - Vamos juntos formar a maior rede de jovens artistas
+        Bem Me Vi - Vamos juntos criar a maior rede de jovens artistas
         periféricos do Brasil!
       </title>
       <meta
         name="title"
-        content="Bem Me Vi - Vamos juntos formar a maior rede de jovens artistas periféricos do Brasil!"
+        content="Bem Me Vi - Vamos juntos criar a maior rede de jovens artistas periféricos do Brasil!"
       />
       <meta
         name="description"
@@ -52,7 +52,7 @@ const PageTags = () => {
       <meta property="og:url" content="https://www.bemmevi.com.br/" />
       <meta
         property="og:title"
-        content="Bem Me Vi - Vamos juntos formar a maior rede de jovens artistas periféricos do Brasil!"
+        content="Bem Me Vi - Vamos juntos criar a maior rede de jovens artistas periféricos do Brasil!"
       />
       <meta
         property="og:description"
@@ -67,7 +67,7 @@ const PageTags = () => {
       <meta property="twitter:url" content="https://www.bemmevi.com.br/" />
       <meta
         property="twitter:title"
-        content="Bem Me Vi - Vamos juntos formar a maior rede de jovens artistas periféricos do Brasil!"
+        content="Bem Me Vi - Vamos juntos criar a maior rede de jovens artistas periféricos do Brasil!"
       />
       <meta
         property="twitter:description"

@@ -87,7 +87,7 @@ const Hero = () => {
         <div className="row">
           <div className="col-12">
             <p className="headline">
-              Vamos juntos formar a MAIOR REDE DE JOVENS ARTISTAS PERIFÉRICOS do
+              Vamos juntos criar a MAIOR REDE DE JOVENS ARTISTAS PERIFÉRICOS do
               Brasil!
             </p>
 

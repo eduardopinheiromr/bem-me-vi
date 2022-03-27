@@ -27,9 +27,8 @@ const WhoWeAre = () => {
           <strong>Thays</strong> Moraes
         </span>
       ),
-      role: "Fundadora e Coordenadora Geral",
-      about:
-        "Assistente Social. Experiência de mais de 10 anos em eventos, contato com público e áreas administrativas. Fundou o projeto Bem Me Vi com intuito de criar oportunidades para que jovens possam escolher caminhos que levem à realização dos seus sonhos e assim transformem suas realidades.",
+      role: "Fundadora, coordenadora geral e produtora cultural.",
+      about: "Assistente Social.",
       quote:
         "“O Bem Me Vi é uma missão de vida! E o contato com os jovens fortalece a cada dia o quanto esse caminho é possível e realizador.”",
     },
@@ -53,7 +52,7 @@ const WhoWeAre = () => {
           <strong>Rayssa</strong> Winnie
         </span>
       ),
-      role: "Apoio pedagógico e cultura",
+      role: "Articuladora cultural",
       about:
         "Pedagoga especializada nas áreas da infância, juventude, empreendedorismo social e políticas públicas.  Experiências relacionadas à consultoria pedagógica, gestão de projetos e programas sociais, formação de jovens, educadores e demais profissionais atuantes na área da educação.",
       quote:
@@ -98,11 +97,12 @@ const WhoWeAre = () => {
           <div className="col">
             <div className="d-flex align-items-center h-100">
               <p>
-                O <strong>Bem Me Vi</strong> é um projeto social que tem como
-                objetivo dar visibilidade para <strong>jovens artistas</strong>.
-                Promovendo o desenvolvimento e autonomia dos jovens enquanto
-                artistas periféricos, dispondo ferramentas para viver de sua
-                arte e valorizando seu papel na cultura do País.
+                O <strong>Bem Me Vi</strong> é um negócio de impacto social que
+                tem como objetivo dar visibilidade para{" "}
+                <strong>jovens artistas</strong>. Promovendo o desenvolvimento e
+                autonomia dos jovens enquanto artistas periféricos, dispondo
+                ferramentas para viver de sua arte e valorizando seu papel na
+                cultura do País.
               </p>
             </div>
           </div>

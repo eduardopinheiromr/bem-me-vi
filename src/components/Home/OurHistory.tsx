@@ -48,25 +48,32 @@ const OurHistory = () => {
         <Row className="mt-5">
           <Col>
             <p>
-              Com o início da pandemia em 2020, o <strong>Bem Me Vi</strong>{" "}
-              passou por uma reformulação, já que as atividades presenciais não
-              foram mais possíveis de serem realizadas. Contudo, abriu-se outras
-              frentes de atuação por meio das redes sociais e a comunicação com
-              os jovens passou a ser virtual. Percebe-se então que há muito a
+              O Bem Me Vi surgiu em 2016 a partir do desejo de criar
+              oportunidades para que jovens pudessem ter a oportunidade de
+              refletir sobre suas vidas e conseguissem escolher caminhos que
+              levassem a realização dos seus sonhos. Em Julho de 2019 o Bem me
+              Vi em parceria com o Atados, conquistou alguns voluntários e
+              orientações preciosas para que o projeto fosse se estruturando. Em
+              Janeiro de 2020 firmou-se a parceria com a Vozes da Periferia, uma
+              Organização Social que atua na região da Vila Prudente, Zona Leste
+              de São Paulo capital. Em março foi formado o primeiro grupo de
+              jovens que participaram das ações do Projeto. Foram desenvolvidas
+              algumas atividades presenciais e remotas que impactaram
+              diretamente 9 jovens. Foram trabalhadas algumas temáticas como
+              desenvolvimento socioemocional e cidadania.
+              <br /> <br />
+              <br /> Durante o período de pandemia o Bem me Vi passou por uma
+              reformulação, já que as atividades presenciais não foram mais
+              possíveis de serem realizadas. Contudo, abriu-se outras frentes de
+              atuação por meio das redes sociais. A comunicação com os jovens
+              passou a ser virtual numa proposta de informar e sensibilizar o
+              público do projeto para aspectos relevantes quanto aos temas de
+              Direitos e Deveres, questões sociais, compartilhamento de
+              experiências vivenciadas por jovens, entre outras outras
+              temáticas. Em Setembro de 2020 o Bem Me Vi percebe que tem muito a
               colaborar com a vida de jovens artistas, e dar visibilidade a
               tantos talentos se transformou no grande propósito desta
-              iniciativa. Ficando claro o quanto o caminho pelas artes é um
-              transformador social, pois há jovens talentosos esperando apenas
-              por uma oportunidade de poder desenvolver seu talento e através da
-              sua arte dar voz a seus sonhos, sem deixar de contar sobre suas
-              realidades. Do desejo de acreditar que há caminhos para a
-              realização dos sonhos. Surgiu o sonho de voar alto e assim como o
-              Bem Te Vi, anunciar. O propósito do{" "}
-              <strong>Bem Me Vi é dar asas para jovens artistas!</strong> O Bem
-              Me Vi acredita na visão de mundo da juventude através de suas
-              expressões artísticas e culturais. E assim mostrar o quanto essa
-              juventude é criativa, do bem e tem muito a dizer por meio da sua
-              arte!
+              iniciativa realizada a muitas mãos.
             </p>
           </Col>
         </Row>

@@ -103,18 +103,18 @@ const Header = ({ toggleMenu, setToggleMenu }: Props) => {
           <li className="d-block d-md-none">
             <a
               className="bmv-primary-btn"
-              href="#"
+              href="#quero-apoiar"
               onClick={() => setToggleMenu(false)}
             >
-              <span>QUERO AJUDAR!</span>
+              <span>QUERO APOIAR!</span>
             </a>
           </li>
         </ul>
         <a
           className="bmv-primary-btn hover-scale-up d-none d-md-block"
-          href="#"
+          href="#quero-apoiar"
         >
-          <span>QUERO AJUDAR!</span>
+          <span>QUERO APOIAR!</span>
         </a>
       </nav>
     </HeaderContainer>

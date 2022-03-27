@@ -47,7 +47,7 @@ const Root = styled.div`
 
 export default function Participate() {
   return (
-    <Root>
+    <Root id="quero-apoiar">
       <Image
         src={bg}
         alt=""
@@ -62,11 +62,11 @@ export default function Participate() {
         <div className="row">
           <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-5">
             <p className="description p-5 text-center">
-              Vamos juntos formar a MAIOR REDE DE JOVENS ARTISTAS PERIFÉRICOS do
+              Vamos juntos criar a MAIOR REDE DE JOVENS ARTISTAS PERIFÉRICOS do
               Brasil! Venha fazer parte, preencha o questionário:
             </p>
           </div>
-          <Link href="https://forms.gle/nidozt6hhgb7hK2j9" passHref>
+          <Link href="https://forms.gle/aibrkQ9BQsKXQ9SX7" passHref>
             <a
               target="_blank"
               rel="noreferrer"
@@ -75,7 +75,7 @@ export default function Participate() {
               <Image src={questionario} alt="questionario" />
             </a>
           </Link>
-          <Link href="https://forms.gle/nidozt6hhgb7hK2j9" passHref>
+          <Link href="https://forms.gle/PWwaAKmEoWHwTtaN6" passHref>
             <a
               target="_blank"
               rel="noreferrer"
@@ -84,7 +84,7 @@ export default function Participate() {
               <Image src={queroApoiar} alt="queroApoiar" />
             </a>
           </Link>
-          <Link href="" passHref>
+          <Link href="https://forms.gle/goA7f7xSJ8bgV1YE7" passHref>
             <a
               target="_blank"
               rel="noreferrer"
